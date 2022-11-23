@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba3jr8n5jcli2"]
+
+[ext_resource type="Script" path="res://control_panel.gd" id="1_n1v3e"]
+[ext_resource type="FontFile" uid="uid://c2d3q3thtouyx" path="res://assets/Poppins-Medium.ttf" id="1_s0ues"]
+
+[node name="ControlPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n1v3e")
+
+[node name="Panel" type="PanelContainer" parent="."]
+offset_right = 472.0
+offset_bottom = 304.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+offset_right = 472.0
+offset_bottom = 304.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 462.0
+offset_bottom = 294.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Speedometer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+offset_right = 452.0
+offset_bottom = 31.0
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/Speedometer"]
+offset_right = 415.0
+offset_bottom = 31.0
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_s0ues")
+theme_override_font_sizes/font_size = 20
+text = "Speed"
+
+[node name="Speed" type="Label" parent="Panel/MarginContainer/VBoxContainer/Speedometer"]
+offset_left = 419.0
+offset_right = 452.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("1_s0ues")
+theme_override_font_sizes/font_size = 20
+text = "100
+"
