@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ba3jr8n5jcli2"]
 
-[ext_resource type="Script" path="res://control_panel.gd" id="1_n1v3e"]
+[ext_resource type="Script" uid="uid://dwdc1omt0qfx5" path="res://control_panel.gd" id="1_n1v3e"]
 [ext_resource type="FontFile" uid="uid://c2d3q3thtouyx" path="res://assets/Poppins-Medium.ttf" id="1_s0ues"]
 
 [node name="ControlPanel" type="Control"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b62yrnpdtxpxm"]
 
-[ext_resource type="Script" path="res://car.gd" id="1_2yx2o"]
+[ext_resource type="Script" uid="uid://p5fojlsjl5yt" path="res://car.gd" id="1_2yx2o"]
 [ext_resource type="Texture2D" uid="uid://4j3r3nq5e1ub" path="res://assets/spritesheet_vehicles.png" id="1_3ajht"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_htcoj"]
